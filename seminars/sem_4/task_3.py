@@ -5,9 +5,12 @@
 # ✔ Диапазон пар ключ-значение от наименьшего из введённых
 # пользователем чисел до наибольшего включительно.
 
-def uni_dict(data):
-    res = dict()
-    return {chr(int(item)): int(item) for item in sorted(data.split())}
+text = '128512 128519'
 
 
-print(uni_dict('1 3'))
+def uni_pairs(data: str):
+    nums = sorted(data.split())
+    return {chr(int(item)): item for item in nums}
+
+
+print(uni_pairs(text))

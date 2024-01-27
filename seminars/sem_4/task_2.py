@@ -7,8 +7,8 @@ text = ('Текст выравнивается по правому краю та
         'длинного слова был один пробел между ним и номером строки')
 
 
-def func(data):
-    return sorted(set([ord(ch) for ch in data]), reverse=True)
+def unicode_codes(data: str) -> list[int]:
+    return sorted(set([ord(item) for item in data]), reverse=True)
 
 
-print(func(text))
+print(unicode_codes(text))

@@ -11,8 +11,10 @@ nums = '1/2/3/5/13/19'
 
 
 def weird_dict(data: str) -> dict[str:str]:
-    _data = data.split('/')
-    return {_data[1]: _data[0], _data[2]: _data[3:]}
+    # _data = data.split('/')
+    # return {_data[1]: _data[0], _data[2]: _data[3:]}
+    a, b, c, *d = data.split('/')
+    return {b: a, c: (*d,)}
 
 
 print(weird_dict(nums))

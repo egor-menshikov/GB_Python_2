@@ -3,4 +3,4 @@
 # числа, сумма цифр которых равна 8.
 # ✔ Решение в одну строку.
 
-print([i for i in range(0, 101) if i % 2 == 0 and sum([int(j) for j in str(i)]) != 8])
+print(*(i for i in range(0, 101, 2) if sum([int(j) for j in str(i)]) != 8))

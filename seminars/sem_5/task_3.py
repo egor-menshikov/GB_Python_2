@@ -6,7 +6,7 @@
 
 my_dict = {'a': 97, 'b': 98, 'c': 99, 'd': 100, 'e': 101, 'f': 102, 'g': 103}
 
-dictiter = iter(my_dict.items())
+dict_iter = iter(my_dict.items())
 
-for i in range(5):
-    print(next(dictiter))
+for _ in range(5):
+    print(next(dict_iter))

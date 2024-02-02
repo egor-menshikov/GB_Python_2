@@ -19,7 +19,7 @@
 # def prime_nums(n: int):
 
 def num_prime(num):  # реализуем функцию проверки числа на простоту
-    for i in range(2, num):
+    for i in range(2, num // 2 + 1):
         if num % i == 0:
             return False
     return True

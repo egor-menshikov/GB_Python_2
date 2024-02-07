@@ -10,7 +10,7 @@ from pathlib import Path
 import string
 import random
 
-filepath = Path(Path.cwd() / 'Task_2' / 'names')
+filepath = Path(Path.cwd() / 'task_123' / 'names')
 
 
 def pseudoname():
@@ -19,9 +19,8 @@ def pseudoname():
     length = random.randint(4, 7)
     while True:
         name = ''.join(random.choice(letters) for _ in range(length))
-        for vowel in vowels:
-            if vowel in name:
-                return name.capitalize()
+        if any(letter in vowels for letter in name):
+            return name.capitalize()
 
 
 def fill_names(quantity: int, filename: Path):

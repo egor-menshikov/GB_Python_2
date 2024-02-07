@@ -28,4 +28,4 @@ def fill_names(quantity: int, filename: Path):
         file.writelines([f'{pseudoname()}\n' for _ in range(quantity)])
 
 
-fill_names(10, filepath)
+fill_names(15, filepath)

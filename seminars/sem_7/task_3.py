@@ -24,11 +24,9 @@ def prepare(list1: list, list2: list) -> (list, list):
     if len(list1) > len(list2):
         for i in range(len(list1) - len(list2)):
             list2.append(list2[i])
-        return list1, list2
     elif len(list1) < len(list2):
         for i in range(len(list2) - len(list1)):
             list1.append(list1[i])
-        return list1, list2
     return list1, list2
 
 
@@ -42,7 +40,7 @@ def combine(filepath1: Path, filepath2: Path, filepath3: Path):
             if product < 0:
                 results.write(f'{name.strip().lower()}|{abs(product)}\n')
             else:
-                results.write(f'{name.strip().upper()}|{int(product)}\n')
+                results.write(f'{name.strip().upper()}|{round(product)}\n')
 
 
 combine(filepath1, filepath2, filepath3)

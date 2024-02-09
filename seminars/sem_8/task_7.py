@@ -5,15 +5,17 @@
 import csv
 import pickle
 from pathlib import Path
+from memory_profiler import profile
 
 _PATH = Path.cwd() / 'task_6' / 'users.csv'
 
 
+@profile
 def csv_print(source_file: Path = _PATH) -> bytes:
     with open(source_file, 'r', newline='') as source:
-        reader = csv.reader(source)
-        data = [item for item in reader]
+        data = list(csv.reader(source))
         return pickle.dumps(data)
 
 
-print(csv_print())
+if __name__ == '__main__':
+    print(csv_print())

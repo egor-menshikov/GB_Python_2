@@ -17,7 +17,7 @@ from pathlib import Path
 
 filepath1 = Path.cwd() / 'task_123' / 'pairs'
 filepath2 = Path.cwd() / 'task_123' / 'names'
-filepath3 = Path.cwd() / 'task_123' / 'results'
+filepath3 = Path.cwd() / 'task_123' / 'source'
 
 
 def prepare(list1: list, list2: list) -> (list, list):

@@ -17,7 +17,8 @@ _PATH_2 = Path.cwd() / 'task_4' / 'users.json'
 
 
 def add_zeros(num: str):
-    return '0' * (10 - len(num)) + num
+    # return '0' * (10 - len(num)) + num
+    return f'{num.zfill(10)}'
 
 
 def func(source_file: Path = _PATH_1, output_file: Path = _PATH_2):

@@ -20,8 +20,9 @@ def convert(source_file: Path = _PATH_1, output_file: Path = _PATH_2):
         data_list = pickle.load(source)
         writer = csv.DictWriter(output, fieldnames=data_list[0].keys())
         writer.writeheader()
-        for item in data_list:
-            writer.writerow(item)
+        # for item in data_list:
+        #     writer.writerow(item)
+        writer.writerows(data_list)
 
 
 if __name__ == '__main__':

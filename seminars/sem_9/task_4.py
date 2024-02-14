@@ -3,30 +3,26 @@
 Параметр - целое число, количество запусков декорируемой
 функции.
 """
-
 from typing import Callable
 
 
-def run_multiple_times(times: int) -> Callable:
-    def decorator(func: Callable) -> Callable:
-        def wrapper(*args, **kwargs) -> None:
-            result = None
-            for _ in range(times):
-                result = func(*args, **kwargs)
-                print(result)
-
+def counter(count: int) -> Callable:
+    def launcher(func: Callable) -> Callable:
+        def wrapper(*args, **kwargs):
+            result = []
+            for _ in range(count):
+                result.append(func(*args, **kwargs) + _)
             return result
 
         return wrapper
 
-    return decorator
+    return launcher
 
 
-# @run_multiple_times(3)
-def example_function():
-    return "Hello, world!"
+@counter(10)
+def triple_sum(a: int, b: int, c: int):
+    return a + b + c
 
 
-# example_function()
-
-run_multiple_times(3)(example_function)()
+# print(triple_sum(1, 2, 3))
+print(triple_sum(1, 2, 3))

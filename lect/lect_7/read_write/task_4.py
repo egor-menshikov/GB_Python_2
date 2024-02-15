@@ -1,7 +1,7 @@
 import pathlib
 
 SIZE = 8
-# with open(pathlib.Path('files/task_3.data'), 'r', encoding='utf-8') as file:
+# with open(pathlib.Path('files/tasks_3_4.data'), 'r', encoding='utf-8') as file:
 #     data = []
 #
 #     for item in file:

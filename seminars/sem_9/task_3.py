@@ -16,7 +16,7 @@ from typing import Callable
 from pathlib import Path
 from inspect import signature
 
-_PATH = Path.cwd() / 'task_3'
+_PATH = Path.cwd() / 'tasks_3_4'
 
 
 def save_to_json(func: Callable) -> Callable:

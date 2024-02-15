@@ -26,12 +26,12 @@ print(p1.name, p1.age, p1.height, p1.weight)
 
 print(Child.mro())
 
-# class Hero(Person, Address, Weapon):
+# class Hero(tasks_3_4, Address, Weapon):
 
 # def __init__(self, power, name=None, race=None, speed=None,
 #              country=None, city=None, street=None,
 #              left_hand=None, right_hand=None):
 #     self.power = power
-#     Person.__init__(self, name, race, speed)
+#     tasks_3_4.__init__(self, name, race, speed)
 #     Address.__init__(self, country, city, street)
 #     Weapon.__init__(self, left_hand, right_hand)

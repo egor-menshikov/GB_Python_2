@@ -12,7 +12,7 @@ import csv
 import json
 from pathlib import Path
 
-_PATH_1 = Path.cwd() / 'task_3' / 'users.csv'
+_PATH_1 = Path.cwd() / 'tasks_3_4' / 'users.csv'
 _PATH_2 = Path.cwd() / 'task_4' / 'users.json'
 
 

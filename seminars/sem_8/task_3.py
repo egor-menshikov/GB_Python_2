@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 _PATH_1 = Path.cwd() / 'task_2' / 'users.json'
-_PATH_2 = Path.cwd() / 'task_3' / 'users.csv'
+_PATH_2 = Path.cwd() / 'tasks_3_4' / 'users.csv'
 
 
 def json_to_csv(source_path: Path = _PATH_1, output_path: Path = _PATH_2):

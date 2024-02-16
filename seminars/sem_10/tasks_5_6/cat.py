@@ -11,7 +11,8 @@ class Cat(Animal):
         return f'{self._jump_height = }\n{self._max_sleep_duration = }'
 
 
-creature1 = Cat(2, 24, 'Vaksa', 7)
+if __name__ == '__main__':
+    creature1 = Cat(2, 24, 'Vaksa', 7)
 
-print(creature1.get_info())
-print(creature1.get_special_info())
+    print(creature1.get_info())
+    print(creature1.get_special_info())

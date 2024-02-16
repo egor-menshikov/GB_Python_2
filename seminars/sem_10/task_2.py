@@ -19,3 +19,7 @@ class Rectangle:
 
     def perimeter(self):
         return 2 * (self.__length + self.__width)
+
+
+rec = Rectangle(10)
+rec._Rectangle__width = 20

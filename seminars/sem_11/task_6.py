@@ -55,6 +55,6 @@ class Rectangle:
         return not self.__lt__(other)
 
 
-a = Rectangle(2, 3)
-b = Rectangle(3, 1)
-print(a >= b)
+a = Rectangle(5, 3)
+b = Rectangle(3, 2)
+print(a == b)

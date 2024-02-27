@@ -17,11 +17,11 @@ from task_4 import User
 
 
 class Login:
-
     def __init__(self, filepath):
         self.filepath = filepath
 
-    def read_users(self, filepath) -> set:
+    @staticmethod
+    def read_users(filepath) -> set:
         res = set()
         with open(filepath, 'r', encoding='utf-8') as file:
             data = json.load(file)

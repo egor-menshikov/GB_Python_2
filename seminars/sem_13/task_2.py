@@ -9,7 +9,7 @@
 my_dict = {'a': 'one'}
 
 
-def get(data: dict, key, default):
+def get(data: dict, key, default=None):
     try:
         return data[key]
     except KeyError:

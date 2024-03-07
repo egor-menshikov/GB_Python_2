@@ -1,0 +1,4 @@
+INFO     - 2024-03-07 13:47:11,601 | PathObject(name='logger', extension='py', is_dir=False, parent='task_1')
+INFO     - 2024-03-07 13:47:11,601 | PathObject(name='main', extension='py', is_dir=False, parent='task_1')
+INFO     - 2024-03-07 13:47:11,601 | PathObject(name='testdir', extension=None, is_dir=True, parent='task_1')
+INFO     - 2024-03-07 13:47:11,601 | PathObject(name='__pycache__', extension=None, is_dir=True, parent='task_1')
